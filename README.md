@@ -119,7 +119,7 @@ Im Terminal die aktuellste Version von public holen:
 
 ----
 
-# R-Markdown als Standard [text]
+# R-Markdown als Standard
 R-Markdown wurde nicht als Standard hinterlegt, da es wie unter [Markdown vs R-Markdown](https://miniemeyer.github.io/2025/09/08/positron-markdown-vs-r-markdown/) beschrieben Probleme mit der automatischen Aktualisierung der Vorschau bei R-Markdown gibt.
 
 Wenn R-Markdown trotzdem als Standard hinterlegt werden soll müssen folgende Prameter in der Datei C:\Users\DEIN_BENUTZERNAME\Documents\.Rprofile hinzugefügt werden.
