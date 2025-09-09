@@ -17,20 +17,19 @@ Positron von https://positron.posit.co herunterladen und istallieren.
     
 # Neues blogdown Projekt erstellen
 ## Neues Projekt anlegen
-![New Folder From Template](readme-images/NewProject.png)
+![](readme-images/NewProject.png)
 
-![alt text](readme-images/ProjectNameAndLocation.png)
+![](readme-images/ProjectNameAndLocation.png)
 
-![alt text](readme-images/ProjectCnfiguration.png)
+![](readme-images/ProjectCnfiguration.png)
 ## .gitignore erweitern
-public/ in .gitignore einfügen, damit die zu veröffentlichende Webseite nicht ins Repo übernommen wird.
+`public/` in .gitignore einfügen, damit die zu veröffentlichende Webseite nicht ins Repo übernommen wird.
 ## blogdown Projekt initialisieren
-In der R-Konsole folgenden Befehl ausführen:
-`blogdown::new_site()`
+In der R-Konsole `blogdown::new_site()` ausführen.
 
 Hierdurch wird die eigentliche Strucktur erstellt und das Projekt sollte anschließend wie folgt aussehen:
 
-![alt text](readme-images/ProjectStructure.png)
+![](readme-images/ProjectStructure.png)
 
 # Neuen Post erstellen 
 ```r
@@ -38,13 +37,13 @@ Hierdurch wird die eigentliche Strucktur erstellt und das Projekt sollte anschli
 ```
 Hierdurch wird eine neuer content/Eintrag erstellt. 
 
-![alt text](readme-images/NewContentPost.png)
+![](readme-images/NewContentPost.png)
 
 ----
 
 # Veröffentlichung auf .github.io
 ## Neues Repo auf Github erstellen
-Wichtig: Der Name des Repo muss DEIN_BENUTZERNAME.github.io lauten 
+Wichtig: Der Name des Repo muss DEIN_BENUTZERNAME.github.io lauten. 
 
 ## Webseite neu erstellen
 Wenn die Webseite noch nie veröffentlicht wurde und der Unterordner public noch nicht existiert.
@@ -52,7 +51,7 @@ Wenn die Webseite noch nie veröffentlicht wurde und der Unterordner public noch
 In der R-Console ``` blogdown::build_site()``` ausführen.  
 Hiermit wird der zu veröffentliche Unterordner public erstellt.
 
-Im Terminal folgende Befehle ausführen, damit ein Git Repo in .\public erstellt und nach .github.io veröffentlicht wird:
+Im Terminal folgende Befehle ausführen, damit ein Git Repo in .\public erstellt, und nach .github.io veröffentlicht wird:
 
 ```bash
     cd .\public\
@@ -65,7 +64,7 @@ Im Terminal folgende Befehle ausführen, damit ein Git Repo in .\public erstellt
 ```
 Hiernach sollte die Webseite auf .github.io unter Settings/Pages vorhanden sein.
 
-![alt text](readme-images/GitPages.png)
+![](readme-images/GitPages.png)
 
 Es kann jedoch einen Augenblick dauern bis hier alles aktualisiert wurde und die Seite mit [Visit site] aufgerufen werden kann.
 
@@ -92,12 +91,12 @@ Sollte beim push ein Fehler auftreten, dann vor dem push `git branch -M main` au
 ----
 
 # Clone from Github
-Wenn diese Projekt von Github geklont werden soll sind folgende Schritte notwendig, damit die Webseite lokal geändert und die Aktualisierun nach .github.io veröffentlicht werden können.
+Wenn diese Projekt von Github geklont werden soll sind folgende Schritte notwendig, damit die Webseite lokal geändert und die Aktualisierung nach .github.io veröffentlicht werden kann.
 
 ## Projekt von Github initialisieren
-Projekt von Github klone.
+Projekt von Github klonen:
 
-![alt text](readme-images/GITClone.png)
+![](readme-images/GITClone.png)
 
 In der R-Console `blogdown::build_site()` ausführen, damit Unterordner public erstellt wird. Dieser ist aufgrund von .gitignore nicht im Repo enthalten.
 
@@ -121,7 +120,7 @@ Im Terminal die aktuellste Version von public holen:
 ----
 
 # R-Markdown als Standard [text]
-R-Markdown wurde nicht als Standard hinterlegt, da es wie unter [Markdown vs R-Markdown](content/post/2025-09-08-positron-markdown-vs-r-markdown/index) beschrieben Probleme mit der automatischen Aktualisierung der Vorschau bei R-Markdown gibt.
+R-Markdown wurde nicht als Standard hinterlegt, da es wie unter [Markdown vs R-Markdown](https://miniemeyer.github.io/2025/09/08/positron-markdown-vs-r-markdown/) beschrieben Probleme mit der automatischen Aktualisierung der Vorschau bei R-Markdown gibt.
 
 Wenn R-Markdown trotzdem als Standard hinterlegt werden soll müssen folgende Prameter in der Datei C:\Users\DEIN_BENUTZERNAME\Documents\.Rprofile hinzugefügt werden.
 ```bash
